@@ -1,0 +1,86 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body #toogle {
+  color: white;
+  cursor: pointer;
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #41198d;
+  padding: 0 25px;
+  gap: 30px;
+}
+
+body nav .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 30px;
+  padding: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-right-radius: 20px;
+}
+
+body nav .navBar li {
+  list-style: none;
+}
+
+body nav .navBar li a {
+  color: white;
+  text-decoration: none;
+}
+
+body nav a {
+  color: white;
+  text-decoration: none;
+}
+
+body nav a i {
+  font-size: 1.3em;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  nav {
+    height: 50px;
+  }
+  nav .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: -190px;
+    background-color: #41198d;
+    -webkit-transition: left 300ms ease-out;
+    transition: left 300ms ease-out;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
